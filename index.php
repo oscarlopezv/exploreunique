@@ -26,11 +26,11 @@ $sql->mysqlsrv();
         <script src="js/jquery-2.1.4.min.js"></script>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>FLY DISCOVER</title>
+	<title>Explore Unique</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="La empresa brinda una asistencia profesional a todos aquellos que necesiten un servicio de viaje. Damos un servicio a medida a todos nuestros clientes que desean viajar ya sea por vacaciones o negocios." />
-        <meta name="title" content="FLY DISCOVER" />
-	<meta name="keywords" content="TOURS, VIAJES, AGENCIA, FLY DISCOVER" />
+        <meta name="title" content="Explore Unique" />
+	<meta name="keywords" content="TOURS, VIAJES, AGENCIA, Explore Unique" />
 	<meta name="author" content="geekdev.ec" />
         <meta name="robots" content="index,nofollow,noodp,nosnippet" />
         
@@ -365,7 +365,7 @@ a:hover .link-popup {
 			<div class="row">
 				<div class="col-md-3">
 					<div class="copyright">
-						<p><small>&copy; 2017 FLY DISCOVER. <br> 
+						<p><small>&copy; 2017 Explore Unique. <br> 
                         
                         </small></p>
 					</div>
@@ -396,19 +396,20 @@ a:hover .link-popup {
 						</div>
 						<div class="col-md-6">
 							<h3>Contáctanos</h3>
-							 Email: info@innovatourclub.com <br>
-                        Teléfono: 0423906268<br>
-						0958967242 / 0992195393 <br>  
+							<?php  require_once('php/datosContacto.php');
+							echo "Email:$correo <br>";
+                        	echo "Teléfono: $telefono<br>";
+							?>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-3">
 					<ul class="social-icons">
 						<li>
-							<a href="https://www.facebook.com/grupoinnovaec/" target="_blank"><i class="icon-facebook-with-circle"></i></a>
-							<a href="https://www.instagram.com/grupoinnovaec/" target="_blank"><i class="icon-instagram-with-circle"></i></a>
-							<a href="https://twitter.com/GrupoInnovaEc" target="_blank"><i class="icon-twitter-with-circle"></i></a>
-							
+						<?php require_once('php/datosContacto.php');?>
+							<a href="<?php echo $facebook ?>" target="_blank"><i class="icon-facebook-with-circle"></i></a>
+							<a href="<?php echo $instagram ?>" target="_blank"><i class="icon-instagram-with-circle"></i></a>
+							<a href="<?php echo $twitter ?>" target="_blank"><i class="icon-twitter-with-circle"></i></a>
 						</li>
 					</ul>
 				</div>

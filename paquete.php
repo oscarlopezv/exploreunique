@@ -19,7 +19,7 @@ $row=mysql_fetch_array($res);
          <script src="js/min/jquery-v1.10.2.min.js" type="text/javascript"></script>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>FLY DISCOVER</title>
+	<title>Explore Unique</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
 	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
@@ -566,7 +566,7 @@ $row=mysql_fetch_array($res);
 			<div class="row">
 				<div class="col-md-3">
 					<div class="copyright">
-						<p><small>&copy; 2017 FLY DISCOVER. <br> 
+						<p><small>&copy; 2017 Explore Unique. <br> 
                         
                         </small></p>
 					</div>
@@ -597,19 +597,20 @@ $row=mysql_fetch_array($res);
 						</div>
 						<div class="col-md-6">
 							<h3>Contáctanos</h3>
-							 Email: info@innovatourclub.com <br>
-                        Teléfono: 0423906268<br>
-						0958967242 / 0992195393 <br>  
+							<?php  require_once('php/datosContacto.php');
+							echo "Email:$correo <br>";
+                        	echo "Teléfono: $telefono<br>";
+							?>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-3">
 					<ul class="social-icons">
 						<li>
-							<a href="https://www.facebook.com/grupoinnovaec/" target="_blank"><i class="icon-facebook-with-circle"></i></a>
-							<a href="https://www.instagram.com/grupoinnovaec/" target="_blank"><i class="icon-instagram-with-circle"></i></a>
-							<a href="https://twitter.com/GrupoInnovaEc" target="_blank"><i class="icon-twitter-with-circle"></i></a>
-							
+						<?php require_once('php/datosContacto.php');?>
+							<a href="<?php echo $facebook ?>" target="_blank"><i class="icon-facebook-with-circle"></i></a>
+							<a href="<?php echo $instagram ?>" target="_blank"><i class="icon-instagram-with-circle"></i></a>
+							<a href="<?php echo $twitter ?>" target="_blank"><i class="icon-twitter-with-circle"></i></a>
 						</li>
 					</ul>
 				</div>

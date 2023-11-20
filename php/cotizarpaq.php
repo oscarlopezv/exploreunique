@@ -10,10 +10,10 @@ values ('$idpaquete','$paquete','".$_SESSION["usuariop-id"]."','$fida','$fvuelta
 $res=mysql_query($query) or die ("error");
 $idv=mysql_insert_id();
 $correo="mails/cotizarpaquete.php";
-$título="COTIZACIÓN FLY DISCOVER";
+$título="COTIZACIÓN Explore Unique";
 $mail=$_SESSION["usuariop"];
 $varsmail="idv=".base64_encode($idv)."&pass=".base64_encode($pass);
-$from='"FLY DISCOVER" <infopy@innovatourclub.com>';
+$from='"Explore Unique" <infopy@innovatourclub.com>';
 //$mail='mneira@grupovilaseca.com';
 include_once("correo.php"); 
 echo "<script> document.location.href='../felicidades-cot.php?idv=".base64_encode($idv)."' </script>";

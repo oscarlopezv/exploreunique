@@ -12,7 +12,8 @@ if (isset($mail) && $mail!=""){
     $correo="mails/suscripcion.php";
     $título="SUSCRIPCIÓN";
     $varsmail="idv=".base64_encode($idv)."&pass=".base64_encode($pass);
-    $from='"FLY DISCOVER" <info@innovatourclub.com>';
+    require_once('php/datosContacto.php');
+    $from='"INNOVA TOUR" <'.$correo.'>';
     //$mail='mneira@grupovilaseca.com';
     include_once("correo.php"); 
     echo "<script> document.location.href='../felicidades-susc.php?idv=".base64_encode($idv)."' </script>";

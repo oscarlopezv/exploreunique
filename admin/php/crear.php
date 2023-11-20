@@ -32,14 +32,16 @@ switch ($id) {
 	break;
 }
 $stmt= mysql_query($query) or die ("Fallo la creacion".mysql_error());
-if ($id=="clientes"){
+if ($id=="clientes")
+{
+	require_once('php/datosContacto.php');
         $idc=mysql_insert_id();
         $correo="mails/membresias-admin.php";
         $título="Bienvenido";
         $copia='Cc: security@innovatourclub.com' . "\r\n";
         $copia.='Cc: geekdev.ec@gmail.com' . "\r\n";
         $varsmail="idv=".base64_encode($idc)."&pass=".$pass;
-        $from='"INNOVA TOUR" <info@innovatourclub.com>';
+		$from='"INNOVA TOUR" <'.$correo.'>';
         //$mail='mneira@grupovilaseca.com';
         include_once("correo.php");   
 }

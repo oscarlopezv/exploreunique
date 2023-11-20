@@ -12,7 +12,8 @@ $correo="mails/solmembresias.php";
 $título="SOLICITUD DE MEMBRESÍA";
 
 $varsmail="idv=".base64_encode($idv)."&pass=".base64_encode($pass);
-$from='"FLY DISCOVER" <info@innovatourclub.com>';
+require_once('php/datosContacto.php');
+$from='"INNOVA TOUR" <'.$correo.'>';
 //$mail='mneira@grupovilaseca.com';
 include_once("correo.php"); 
 echo "<script> document.location.href='../felicidades-perfil.php?idv=".base64_encode($idv)."' </script>";

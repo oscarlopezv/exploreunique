@@ -17,7 +17,7 @@ $para  = $mail;
 $cabeceras  = 'MIME-Version: 1.0' . "\r\n";
 $cabeceras .= 'Content-type: text/html; charset=utf-8' . "\r\n";
 $cabeceras .= 'From: '.$from. "\r\n";
-$cabeceras .= 'Cc: info@flydiscover.club' . "\r\n";
+$cabeceras .= 'Cc: explore.uniqueadm@gmail.com' . "\r\n";
 mail($para, $título, $mensaje, $cabeceras);
 //echo "<script> document.location='".$url."/conf-cotizador.php?cl=".base64_encode($nombre)."' </script>";
 ?>

@@ -340,7 +340,7 @@ body{
     <br>
     Tu membresia ha sido activada con éxito.<br>
     Ahora puedes disfrutar de todos los beneficios   <br>
-     como miembro de la familia FLY DISCOVER.
+     como miembro de la familia Explore Unique.
       <p></p>
       Tus credenciales para poder acceder<br> a nuestro sitio web son las siguientes:
       <h5>Usuario o Mail: <?php echo $row["mail"]?> <br>

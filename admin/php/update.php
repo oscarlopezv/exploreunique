@@ -79,10 +79,11 @@ if ($id=="cotizacionespaq"){
             } else if ($estado=="Confirmado (Deposito)"){
                 $correo="mails/cotpaqdeposito.php";
             }
-            
+
+            require_once('php/datosContacto.php');
             $título="Cotización confirmada";            
             $varsmail="idv=".base64_encode($idcot)."&pass=".base64_encode($pass);
-            $from='"INNOVA TOUR" <info@innovatourclub.com>';
+            $from='"INNOVA TOUR" <'.$correo.'>';
             //$mail='mneira@grupovilaseca.com';
             include_once("correo.php");   
         }
@@ -98,7 +99,7 @@ if ($id=="cotizacionesg"){
             
             $título="Cotización confirmada";            
             $varsmail="idv=".base64_encode($idcot)."&pass=".base64_encode($pass);
-            $from='"INNOVA TOUR" <info@innovatourclub.com>';
+            $from='"INNOVA TOUR" <'.$correo.'>';
             //$mail='mneira@grupovilaseca.com';
             include_once("correo.php");   
         }
@@ -128,7 +129,8 @@ if ($id=="suscripcion"){
             }
              
             $varsmail="idv=".base64_encode($idcot)."&pass=".$pass;
-            $from='"INNOVA TOUR" <info@innovatourclub.com>';
+            require_once('php/datosContacto.php');
+            $from='"INNOVA TOUR" <'.$correo.'>';
             //$mail='mneira@grupovilaseca.com';
             include_once("correo.php");   
         }

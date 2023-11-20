@@ -13,7 +13,7 @@ $sql->mysqlsrv();
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>FLY DISCOVER</title>
+	<title>Explore Unique</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
 	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
@@ -186,7 +186,7 @@ $sql->mysqlsrv();
     <form class="login-form" action="php/sugerencias.php" method="post">
       
       <p class="message"><?php $_SESSION["usuariop-name"] ?>!<br>
-       En <b>FLY DISCOVER</b> valoramos tu opinión, nuestro objetivo es mejorar continuamente la calidad de nuestros productos y servicios
+       En <b>Explore Unique</b> valoramos tu opinión, nuestro objetivo es mejorar continuamente la calidad de nuestros productos y servicios
 
           Haznos llegar tus Sugerencias a través del siguiente formulario:</p><br>
         <textarea name="suge" required id="suge" rows="8" placeholder="Comentarios y sugerencias"></textarea>

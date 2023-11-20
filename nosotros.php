@@ -14,7 +14,7 @@ $sql->mysqlsrv();
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>FLY DISCOVER</title>
+	<title>Explore Unique</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
 	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
@@ -205,7 +205,7 @@ Nuestro personal está debidamente capacitado para poder lograr superar las expe
 			<div class="row">
 				<div class="col-md-3">
 					<div class="copyright">
-						<p><small>&copy; 2017 FLY DISCOVER. <br> 
+						<p><small>&copy; 2017 Explore Unique. <br> 
                         Email: info@yoursite.com <br>
                         Teléfono: + 1235 2355 98 <br>
 						Dirección: Poner aquí la dirección <br> 
@@ -238,9 +238,10 @@ Nuestro personal está debidamente capacitado para poder lograr superar las expe
 						</div>
 						<div class="col-md-6">
 							<h3>Contáctanos</h3>
-							 Email: info@innovatourclub.com <br>
-                        Teléfono: 0423906268<br>
-						0958967242 / 0992195393 <br>  
+							<?php  require_once('php/datosContacto.php');
+							echo "Email:$correo <br>";
+                        	echo "Teléfono: $telefono<br>";
+							?>
 						</div>
 					</div>
 				</div>
