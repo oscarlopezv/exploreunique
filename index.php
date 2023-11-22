@@ -145,6 +145,25 @@ $sql->mysqlsrv();
 a:hover .link-popup {
     color: #2c1eff;
 }
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
 @media only screen and (max-width: 1024px) {
     #flags a{
         display: inline-flex;  
@@ -179,6 +198,10 @@ a:hover .link-popup {
 				</div>
 			</div>
 		</header>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://wa.me/593981160259" class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a>
         <div class="buscador">
         <div class="buscar-texto">
         <form method="get" id="busquedaf" action="busqueda.php">
@@ -336,29 +359,10 @@ a:hover .link-popup {
 						</figcaption>			
 					</figure>
                     <?php } ?>
-                    
-                    
-                    
+                        
 				</div>
-                
-                
-                
-                
 	</div>
     </div>
-    
-    
-    
-    
-
-	
-
-	
-
-	
-
-
-	
 
 	<footer id="footer" class="fh5co-bg-color">
 		<div class="container">
